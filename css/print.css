@@ -1,0 +1,95 @@
+/**
+ * Print Stylesheet of PleasFillInClient
+ *
+ * @author	Moritz Gießmann / eyeworkers interactive
+ * @function 	Default screen stylesheet for all printers
+ *
+ */
+
+
+
+
+/**
+ * @section Reset
+ * ----------------------------------------------------------
+ */
+
+* {
+   background:#ffffff none !important;
+   color:#000000!important;
+   position:static!important;
+   -webkit-box-shadow:0 0 0 #fff!important;
+   -moz-box-shadow:0 0 0 #fff!important;
+   box-shadow:0 0 0 #fff!important;
+}
+
+body {
+   font-size: 8pt!important;
+   line-height:1.4!important;
+   font-family:Arial, Helvetica, sans-serif!important;
+}
+
+
+/**
+ * @section Elements To Hide
+ * ----------------------------------------------------------
+ */
+
+.skiplinks,
+.nav {
+   display: none!important;
+}
+
+/**
+ * @section Reformatting
+ * ----------------------------------------------------------
+ */
+
+
+.container,
+.sidebar, 
+.footer, 
+.content {
+   width: auto!important;
+   margin: 0 2%;
+   padding: 0;
+   border: 0;
+   float: none !important;
+   color: black;
+   background: transparent none!important;
+   font-size:8pt;
+}
+
+h1, h2, h3, h4, h5, h6 { font-weight:bold; margin:0.6cm 0 0.1cm!important; line-height:1.3em; }
+
+h1 {font-size:16pt!important;margin-bottom:0.5cm}
+h2 {font-size:14pt!important}
+h3 {font-size:12pt!important}
+h4 {font-size:11pt!important}
+h5 {font-size:10pt!important}
+
+
+a:link, a:visited {
+   background: transparent;
+   font-weight: bold;
+   text-decoration: underline;
+   color:#000;
+}
+   
+.content a:link:after, .content a:visited:after {
+   content: " (" attr(href) ") ";
+   font-size: 90%;
+   }
+.content a[href^="/"]:after {
+   content: " (http://www.domainname.de" attr(href) ") ";
+   }
+   
+ .footer {
+	 border-top:0.8pt solid #555;
+         margin-top:10pt;
+         padding:10pt 0 0 0;
+ }
+ 
+ img {
+	 border:none!important;
+ }
