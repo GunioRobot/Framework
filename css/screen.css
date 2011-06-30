@@ -1,9 +1,9 @@
 /**
  * Screen Stylesheet of PleasFillInClient
  *
- * @author	Moritz Gießmann / eyeworkers interactive
- * @function 	Default screen stylesheet for all browsers
- *
+ * @author	Author / eyeworkers interactive
+ * @function	Default screen stylesheet for all browsers
+ * @framework	by Moritz Gießmann
  */
 
 /**
@@ -54,11 +54,8 @@ body {
 	font-family : Trebuchet MS, Geneva, Arial, Helvetica, sans-serif;
 	font-size: 0.625em;
 	line-height: 1.5;
-	color: #cbcbcb;
-	background: #0d0d0d; /* old browsers */
-	background: -moz-linear-gradient(left, #202D33 0%, #1B6A91 50%, #202D33 100%); /* firefox */
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#202D33), color-stop(50%,#1B6A91), color-stop(100%,#202D33)); /* webkit */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#202D33', endColorstr='#202D33',GradientType=1 ); /* ie */
+	color: #000;
+	background: #ccc;
 }
 
 a {text-decoration:none;}
@@ -76,6 +73,7 @@ code {font-family:monospace;}
  * ----------------------------------------------------------
  */
  
+.scrText {display:block; text-indent:-99999em; overflow:hidden;}
 .left {float: left;margin: 0 0.5em 0 0;}
 .right {float: right;margin: 0 0 0 0.5em;}
 /*.clear {clear:both;}*/
@@ -83,43 +81,6 @@ code {font-family:monospace;}
 .clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
 * html .clearfix             { zoom: 1; } /* IE6 */
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
-
-
-/**
- * @section 960px, 12 columns grid (The 1Kb Grid)
- * ----------------------------------------------------------
- */
-
-.grid_1 { width:60px; }
-.grid_2 { width:140px; }
-.grid_3 { width:220px; }
-.grid_4 { width:300px; }
-.grid_5 { width:380px; }
-.grid_6 { width:460px; }
-.grid_7 { width:540px; }
-.grid_8 { width:620px; }
-.grid_9 { width:700px; }
-.grid_10 { width:780px; }
-.grid_11 { width:860px; }
-.grid_12 { width:940px; }
-
-.column {
-	margin: 0 10px;
-	overflow: hidden;
-	float: left;
-	display: inline;
-}
-.row {
-	width: 960px;
-	margin: 0 auto;
-	overflow: hidden;
-}
-.row .row {
-	margin: 0 -10px;
-	width: auto;
-	display: inline-block;
-}
-
 
 
 /**
@@ -142,24 +103,6 @@ p.skiplinks a:active, p.skiplinks a:focus {
 }
 
 /**
- * $IE6 PNGFIX
- * 
- * @workaround
- * ---------------------------------------------------------
- */
- 
-* html .png {
-position:relative;
-behavior: expression((this.runtimeStyle.behavior="none")&&(this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
-this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
-this.src = "img/blank.gif"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
-this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
-this.runtimeStyle.backgroundImage = "none")),this.pngSet=true)
-);
-}
- 
-
-/**
  * @section Container/Wrapper
  * ----------------------------------------------------------
  */
@@ -167,7 +110,7 @@ this.runtimeStyle.backgroundImage = "none")),this.pngSet=true)
 .container {
 	margin: 0 auto;	
 	width: 960px;
-	background:#151516;
+	background:#fff;
 	/*background:rgba(0,0,9,0.9);*/
 	-webkit-box-shadow:0 0 15px rgba(0,0,0,0.5);
 	-moz-box-shadow:0 0 15px rgba(0,0,0,0.5);
@@ -193,22 +136,19 @@ this.runtimeStyle.backgroundImage = "none")),this.pngSet=true)
 	padding:30px;
 }
 
+
 /**
  * @section Content
  * ----------------------------------------------------------
  */
 
 .content {
-	/*clear: both;*/
-	/*float: left;*/
-	/*width: 530px;	*/
-	/*background: rgba(255,255,255,0.05);*/
-	/*padding:30px;*/
 	font-size:13px;
+	float:right;
 }
 
 .content h1, .h1, .content h2, .h2, .content h3, .h3, .content h4, .h4 {
-	color:#fff;
+	color:#000;
 }
 
 .content h1, .h1 {
@@ -296,6 +236,7 @@ this.runtimeStyle.backgroundImage = "none")),this.pngSet=true)
 	/*float: right;	*/
 	/*width: 310px;*/
 	/*padding:30px;*/
+	float:left;
 }
 
 /**
