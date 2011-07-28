@@ -32,12 +32,12 @@
 	</noscript>
 <script type="text/javascript" src="js/jsBeforeDOM.js"></script>
 <!-- Skiplinks for better accessibility -->
-<p class="skiplinks"><em>Springen Sie direkt:</em> <a href="#content">Zum Inhalt</a>, <a href="#nav">Zur Hauptnavigation</a>, <a href="#global-nav">Globalnavigation</a></p>
+<p class="skiplinks"><em>Springen Sie direkt:</em> <a href="#content">Zum Inhalt</a>, <a href="#nav">Zur Hauptnavigation</a></p>
 
 <div class="container">
-	<div class="header">
+	<div class="header" role="banner">
 		<h1><a href="#" title="Zur Startseite"></a></h1>
-		<ul class="global-nav" id="global-nav">
+		<ul class="nav" id="nav" role="navigation">
 			<li><a href="#">Lorem</a></li>
 			<li><a href="#">Ipsum</a></li>
 			<li><a href="#">Dolor</a></li>
@@ -45,7 +45,7 @@
 		</ul>
 	</div><!--/header-->
 	<div class="wrapper clearfix">
-	<div class="content" id="content">
+	<div class="content" id="content" role="main">
 		<h1>Überschrift erster Ordnung</h1>
 		<img alt="" src="http://dummyimage.com/500x250/ddd/fff">
 		<p>Ich bin ein Absatz. Ich kann <a href="#">Verweise zu anderen Seiten</a> enthalten, mein Text kann auf <strong>verschiedene</strong> <em>Arten</em> hervorgehoben werden. Ich kann auch <abbr title="Abkürzungen">Abk.</abbr> enthalten. Eine weitere Spezialität ist der <code>Code</code>. Wer auch mal Inhalte ändert möchte eventuell auch mal was <del>löschen</del> und etwas anderes <ins>einfügen</ins>. In seltenen Fällen gebraucht man auch ein <q>Zitat im Text</q></p>
@@ -94,9 +94,9 @@
 			</tr>
 		</table>
 	</div><!--/content-->
-	<div class="sidebar">
+	<div class="sidebar" role="complementary">
 		<h2>Überschrift zweiter Ordnung</h2>
-		<img alt="" src="http://dummyimage.com/187x116/ddd/fff">
+		<img alt="" src="http://dummyimage.com/187x116/ddd/fff" />
 		<p> Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel? Gerade jetzt, wo er das Ding seines Lebens gedreht hatte und mit der Beute verschwinden wollte! Hatte einer seiner zahllosen Kollegen dieselbe Idee gehabt, ihn beobachtet und abgewartet, um ihn nun um die Früchte seiner Arbeit zu erleichtern?</p>
 		<p> Oder gehörten die Schritte hinter ihm zu einem der unzähligen Gesetzeshüter dieser Stadt, und die stählerne Acht um seine Handgelenke würde gleich zuschnappen? Er konnte die Aufforderung stehen zu bleiben schon hören. Gehetzt sah er sich um. Plötzlich erblickte er den schmalen Durchgang. Blitzartig drehte er sich nach rechts und verschwand zwischen den beiden Gebäuden. Beinahe wäre er dabei über den umgestürzten Mülleimer gefallen, der mitten im Weg lag.</p>
 		<p> Er versuchte, sich in der Dunkelheit seinen Weg zu ertasten und erstarrte: Anscheinend gab es keinen anderen Ausweg aus diesem kleinen Hof als den Durchgang, durch den er gekommen war. Die Schritte wurden lauter und lauter, er sah eine dunkle Gestalt um die Ecke biegen. Fieberhaft irrten seine Augen durch die nächtliche Dunkelheit und suchten einen Ausweg. War jetzt wirklich alles vorbei, waren alle Mühe und alle Vorbereitungen umsonst? Er presste sich ganz eng an die Wand hinter ihm und hoffte, der Verfolger würde ihn übersehen, als plötzlich neben ihm mit kaum wahrnehmbarem Quietschen eine Tür im nächtlichen Wind hin und her schwang. Könnte dieses der flehentlich herbeigesehnte Ausweg aus seinem Dilemma sein? Langsam bewegte er sich auf die offene Tür zu, immer dicht an die Mauer gepresst. Würde diese Tür seine Rettung werden? Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen </p>
@@ -106,8 +106,20 @@
 		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
 	</div><!--/sidebar-->
 	</div>
-	<div class="footer">
-		<p>Ich bin der Fußzeilentext. <a class="print" href="javascript:window.print()">Seite Drucken</a></p>
+	<div class="footer" role="contentinfo">
+		<div id="hcard-Vorname-Nachname" class="vcard">
+			<span class="fn">Vorname Nachname</span>
+			<span class="org">Organisation</span>
+			<a class="email" href="mailto:E-Mail">E-Mail</a>
+			<span class="adr">
+				<span class="street-address">Straße</span>
+				<span class="locality">Stadt</span>
+				<span class="region">Land</span>
+				<span class="postal-code">PLZ</span>
+				<span class="country-name">Land</span>
+			</span>
+			<div class="tel">Telefon</div>
+		</div><a class="print" href="javascript:window.print()">Seite Drucken</a>
 	</div><!--/footer-->
 </div><!--/container-->
 
