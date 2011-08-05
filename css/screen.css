@@ -178,6 +178,19 @@ p.skiplinks a:active, p.skiplinks a:focus {
 	margin-bottom:18px;
 }
 
+.content img {
+	border:1px solid;	
+}
+
+.content img.left {
+	float:left;
+	margin:0 1em 1em 0;
+}
+
+.content img.right {
+	float:right;
+	margin:0 0 1em 1em;
+}
 
 /* Listen */
 
